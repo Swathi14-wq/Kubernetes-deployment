@@ -1,0 +1,9 @@
+name: Run Python Script
+on: [push]
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Python script
+        run: |
+          python your_script.py
