@@ -4,7 +4,7 @@ def test_frontend_backend_integration():
     backend_url = "http://localhost:3000"
   response = requests.get(f"{frontend_url}/greeting")
     assert response.status_code == 200
-    assert "Hello from backend!" in response.text
+    assert "Hello from the backend!" in response.text
 response = requests.get(f"{backend_url}/greeting")
     assert response.status_code == 200
-    assert "Hello from backend!" in response.text
+    assert "Hello from the backend!" in response.text
